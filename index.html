@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My family book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>My family book</h1>
+  </div>
+  <div>
+    <img src="https://images.squarespace-cdn.com/content/v1/5a6f6b879f8dce21e144cab7/1538154078189-IMNTJ0A19DUDXXDZPWS2/ke17ZwdGBToddI8pDm48kOa-G079lAeXntrOV5VW4v8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdLssGnJEvj_EGoFCnhWmwtVXTwwMqlPFJ6NqQ2fhwJ_NQmaqkdkMwnQD7VeLKGWoLk/Screenshot+2018-09-28+11.57.21.png?format=750w" id="img">
+  </div>
+  <div>
+  <h2 id="text">
+    My family
+  </h2>
+</div>
+  <div>
+    <button id="next" type="button" onclick="next_pic()">Next</button>
+  </div>
+     <script>
+var images=[
+    "https://images.squarespace-cdn.com/content/v1/5a6f6b879f8dce21e144cab7/1538154078189-IMNTJ0A19DUDXXDZPWS2/ke17ZwdGBToddI8pDm48kOa-G079lAeXntrOV5VW4v8UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdLssGnJEvj_EGoFCnhWmwtVXTwwMqlPFJ6NqQ2fhwJ_NQmaqkdkMwnQD7VeLKGWoLk/Screenshot+2018-09-28+11.57.21.png?format=750w",
+  "kabir .jpg",
+  "70451 copy.jpg"
+];
+
+
+var text=[
+    "My Family",
+  "Kabir Vijay Tandon",
+  "Eklavya Tandon"
+];
+
+var i = 0;
+function next_pic(){
+  if(i == 3)
+    {
+      i=0
+    }
+  document.getElementById("img").src=images[i];
+  document.getElementById("text").innerHTML= text[i];
+  i++;
+}
+
+     </script>
+</body>
+</html>
